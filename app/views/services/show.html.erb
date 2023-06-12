@@ -71,7 +71,6 @@
         <p>Location: <%= @service.user.location %></p>
       </div>
       <div class="to-booking">
-        <%# put condition for delete button %>
         <% if current_user == @service.user %>
           <div class="booking-card">
             <h3>You are the owner of this offer.</h3>
@@ -85,7 +84,7 @@
         <% else %>
           <div class="booking-card" data-controller="price">
             <div class="price-booking">
-              <h5>$<span data-price-target="price"><%= @service.price %></span></h5>
+              <p>$<span data-price-target="price"><%= @service.price %></span></p>
               <p>&emsp;per day</p>
             </div>
             <%= simple_form_for [@service, @booking], data: { controller: 'flatpickr' } do |f| %>
@@ -98,7 +97,7 @@
               <p class="text-muted">Tax: $30</p>
             </div>
             <div class="final-price">
-              <b>Total with taxes $<span data-price-target="lasttotal"><%= @service.price + 30%></span></b>
+              <p>Total with taxes $<span data-price-target="lasttotal"><%= @service.price + 30%></span></p>
             </div>
           </div>
         <% end %>

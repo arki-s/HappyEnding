@@ -1,12 +1,11 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Karla:wght@200&family=Zeyada&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap');
 
 // Define fonts for body and headers
 
-$headers-font: 'Dancing Script', cursive;
-$sub-headers-font: 'Caveat', cursive;
-$body-font: 'Caveat', cursive;
+$headers-font: 'EB Garamond', 'Playfair Display';
+$sub-headers-font: 'EB Garamond', 'Playfair Display';
+$body-font: 'EB Garamond', 'Playfair Display';
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
